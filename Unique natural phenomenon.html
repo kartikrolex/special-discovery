@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Update: Rare Discovery</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #000;
+        }
+
+        /* News-style Headline */
+        .headline {
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-align: center;
+            max-width: 800px;
+            line-height: 1.2;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .sub-instruction {
+            font-family: Arial, sans-serif;
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Rectangular Reveal Box */
+        .discovery-box {
+            width: 140px;
+            height: 60px;
+            background-color: #f0f0f0;
+            border: 2px dashed #888;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            border-radius: 8px;
+        }
+
+        .discovery-box:hover {
+            transform: scale(1.05);
+            background-color: #e8e8e8;
+        }
+
+        #reveal-message {
+            display: none;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        /* Smaller 'Its you' text */
+        .it-is-you {
+            font-family: Arial, sans-serif;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px; 
+        }
+
+        /* Simple Purple Birthday Wish with Pink Heart */
+        .birthday-wish {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #800080; /* Solid Purple */
+        }
+
+        .pink-heart {
+            color: #ff69b4; /* Pink color for the heart */
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="headline">
+        Scientists have discovered more precious and rarest thing than diamond in this universe...
+    </div>
+
+    <div class="sub-instruction">
+        click below 👇 to know
+    </div>
+
+    <div class="discovery-box" onclick="revealDiscovery()">
+        <span style="font-family: Arial;">Reveal</span>
+    </div>
+
+    <div id="reveal-message">
+        <div class="it-is-you">Its you 🫵</div>
+        <div class="birthday-wish">
+            Wishing you the happiest birthday Lalitha<span class="pink-heart">🩷</span>
+        </div>
+    </div>
+
+    <script>
+        function revealDiscovery() {
+            document.getElementById('reveal-message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
